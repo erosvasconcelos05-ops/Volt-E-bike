@@ -31,7 +31,12 @@
 <body class="min-h-screen flex flex-col bg-gray-50 text-cor-texto">
 
     <header class="bg-white text-cor-texto shadow-sm p-4 flex justify-between items-center">
-        <h1 class="text-2xl font-bold text-volt-verde">Volt E-bike</h1>
+        <div class="flex items-center gap-4">
+            <a href="index.html">
+                <img src="Volt E-bike.png" alt="Logo Volt E-bike" class="h-12 w-12 rounded-lg" />
+            </a>
+            <h1 class="text-2xl font-bold text-volt-verde">Volt E-bike</h1>
+        </div>
         <nav class="space-x-6">
             <a href="#home" class="hover:text-volt-azul">Início</a>
             <a href="#produtos" class="hover:text-volt-azul">Vendas</a>
@@ -60,10 +65,8 @@
         <aside id="aluguel" class="bg-white rounded-2xl p-6 shadow">
             <h3 class="text-2xl font-semibold mb-4 text-volt-azul">Aluguel & Assinatura</h3>
             <p class="text-sm text-gray-600 mb-4">Escolha um plano diário ou por assinatura. Manutenção inclusa.</p>
-
             <div id="fleetList" class="space-y-4">
                 </div>
-
             <div class="mt-6">
                 <h4 class="font-semibold">Planos de Exemplo</h4>
                 <ul class="text-sm text-gray-600 mt-2">
@@ -91,7 +94,6 @@
         <div class="bg-white rounded-xl max-w-md w-full p-6">
             <h4 id="modalTitle" class="text-xl font-semibold mb-2">Alugar</h4>
             <p id="modalStatus" class="text-sm text-gray-600 mb-4">Status: </p>
-
             <div class="space-y-3">
                 <div>
                     <label class="block text-sm font-medium">Plano</label>
@@ -100,19 +102,16 @@
                         <option value="assinatura">Assinatura (mensal)</option>
                     </select>
                 </div>
-
                 <div id="modalDaily">
                     <label class="block text-sm font-medium">Dias</label>
                     <input id="modalDays" type="number" min="1" value="1" class="mt-1 w-full border rounded px-3 py-2" />
                     <div class="mt-2">Preço estimado: <strong id="modalPriceDay" class="text-volt-verde">R$ 0</strong></div>
                 </div>
-
                 <div id="modalMonthly" class="hidden">
                     <label class="block text-sm font-medium">Meses (assinatura)</label>
                     <input id="modalMonths" type="number" min="1" value="1" class="mt-1 w-full border rounded px-3 py-2" />
                     <div class="mt-2">Preço estimado: <strong id="modalPriceMonth" class="text-volt-verde">R$ 0</strong></div>
                 </div>
-
                 <div class="flex justify-end gap-3 mt-4">
                     <button id="modalCancel" class="px-4 py-2 border rounded">Cancelar</button>
                     <button id="modalConfirm" class="px-4 py-2 bg-volt-verde text-white rounded hover:opacity-80">Confirmar</button>
@@ -376,5 +375,8 @@
 
         init();
     </script>
+</body>
+</html>
+    <!-- ... -->
 </body>
 </html>
